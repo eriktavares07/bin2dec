@@ -1,0 +1,16 @@
+@import "./app/styles/reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #4ae742;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+body,
+html {
+  height: 100%;
+}

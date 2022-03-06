@@ -1,0 +1,23 @@
+<main id="appMount">
+  <form [formGroup]="conversionForm" (submit)="onSubmit()" class="converter">
+    <textarea
+      class="converter-input"
+      formControlName="binaryNumber"
+      (keypress)="isTypingBinaryNumber($event)"
+      name="binaryNumber"
+      id="binaryNumber"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <input class="converter-submit slide" type="submit" value="CONVERT" />
+    <textarea
+      class="converter-input"
+      formControlName="decimalNumber"
+      (keypress)="isTypingDecimalNumber($event)"
+      name="decimalNumber"
+      id="decimalNumber"
+      cols="30"
+      rows="10"
+    ></textarea>
+  </form>
+</main>
